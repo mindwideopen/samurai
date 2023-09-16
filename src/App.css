@@ -1,0 +1,25 @@
+.app-wrapper {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-areas:
+  'header header'
+  'nav content';
+    grid-template-rows: 60px 100%;
+    grid-template-columns: 2fr 10fr;
+    gap: 10px;
+}
+
+image {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.wrapper-content {
+    grid-area: content;
+    background-color: aqua;
+}
+
+

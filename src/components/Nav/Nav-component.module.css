@@ -1,0 +1,27 @@
+
+.nav {
+    grid-area: nav;
+    background-color: violet;
+    position: relative;
+}
+
+li{
+
+    margin-left: 10px;
+}
+
+li a {
+
+    color:darkblue;
+}
+
+/*.item a:hover {*/
+/*    color:darkblue;*/
+/*}*/
+li a:hover, li a.activeLink{
+    color:aqua;
+    background: white;
+    border-radius: 10px;
+    text-decoration-line: none;
+
+}

@@ -1,0 +1,9 @@
+{
+   
+    "emmet.includeLanguages" : {
+      "javascript": "javascriptreact"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always"
+    
+}
