@@ -23,11 +23,11 @@
 
 .messages {
     padding: 10px;
-    margin-left: 0px;
+    margin-left: 0;
 
 }
 
-messages .message {
-    margin-left: 0px;
+.messages .message {
+    margin-left: 0;
 
 }
