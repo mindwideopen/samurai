@@ -5,7 +5,11 @@ const Header = () => {
   
     return (
       <header className={s.header}>
-            <img  className='image' src="https://cms.nhl.bamgrid.com/images/photos/330479418/binary-file/raw.jpg" alt=""/>
+
+          <div className={s.logo}>
+                <img className={s.nyr} src="https://cms.nhl.bamgrid.com/images/photos/330479418/binary-file/raw.jpg" alt=""/>
+            </div>
+
       </header>
     );
     

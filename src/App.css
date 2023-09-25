@@ -1,25 +1,27 @@
 .app-wrapper {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    background-color: coral;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
     display: grid;
     grid-template-areas:
   'header header'
   'nav content';
-    grid-template-rows: 60px 100%;
+    grid-template-rows: 200px 1fr;
     grid-template-columns: 2fr 10fr;
-    gap: 10px;
+    gap: 30px;
+    border-radius: 10px;
 }
 
-image {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto;
-}
+
 
 .wrapper-content {
     grid-area: content;
-    background-color: aqua;
+    background-color: chocolate;
+    border-radius: 10px;
+
+
 }
 
 

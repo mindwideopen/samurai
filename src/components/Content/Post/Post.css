@@ -1,13 +1,25 @@
 .post {
-    margin: 50px;
+    /*margin-top: 50px;*/
     width: 200px;
     height: 40px;
     background-color: rgb(32, 0, 54);
     border-radius: 100%;
     text-align: center;
     color:wheat;
+    padding-top: 10px;
+
 }
 
+.likes {
+    margin: 10px;
+    color: red;
+}
 
+.all_posts {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
+}
 

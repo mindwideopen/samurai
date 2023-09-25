@@ -1,18 +1,20 @@
 import React from "react";
-import './Content.css'
-import Post from "../Post/Post";
+import s from './Content.module.css'
+import My_Posts from "./My Posts/My_Posts";
+import {addPost} from "../../redux/state";
 
 
 
 
-const Profile = () => {
+
+
+const Profile = (props) => {
     return (
-
-        <div className="content">
-         <Post greet = 'HI!'/>  
-         <Post greet = 'Finally!'/>
-         <Post greet = 'CompletedI!'/>
+        <div className={s.profile}>
+            <My_Posts posts={props.posts} updatePostText={props.updateNewText} addPost={addPost} />
         </div>
+
+
     );
 }
 

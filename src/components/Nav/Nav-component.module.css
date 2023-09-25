@@ -1,27 +1,32 @@
-
 .nav {
     grid-area: nav;
     background-color: violet;
-    position: relative;
+    font-size: 3rem;
+    border-radius: 10px;
+    border: 2px solid black;
+
 }
 
-li{
+.wrap {
+    height: fit-content;
+}
 
+li {
     margin-left: 10px;
+    font-size: rem;
 }
 
 li a {
-
-    color:darkblue;
+    color: darkblue;
 }
 
-/*.item a:hover {*/
-/*    color:darkblue;*/
-/*}*/
-li a:hover, li a.activeLink{
-    color:aqua;
+li a:hover, li a.activeLink {
+    color: aqua;
     background: white;
     border-radius: 10px;
     text-decoration-line: none;
 
+
 }
+
+
