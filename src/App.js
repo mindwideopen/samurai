@@ -11,18 +11,18 @@ import Friends from "./components/Friends/Friends";
 
 
 
+
 const App = (props) => {
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
                 <Nav/>
+
                 <div className="wrapper-content">
                     <Routes>
                         <Route path='/profile/*' element={<Profile posts={props.appState.profilePage.posts}
-                                                 addPost={props.addPost}
-                                                 updateNewText={props.updatePostText}/>}/>
-
+                                                 dispatch={props.disaptch}/>}/>
                         <Route path='/dialogs/*' element={<Dialogs dialogsData={props.appState.dialogsPage.dialogsData}
                                                                    messagesData={props.appState.dialogsPage.messagesData}/>}/>
                         <Route path='/news/*'     element={<News/>}/>
