@@ -25,7 +25,7 @@ let store = {
                     likesCount: 1000
                 }
                 ],
-            newPostText: 'test-text'
+            newPostText: ''
 
         },
         dialogsPage: {
@@ -63,6 +63,8 @@ let store = {
             };
             this._state.profilePage.posts.push(newPost);
             this._state.profilePage.newPostText = '';
+            console.log("В поле текст" + this._state.profilePage.newPostText)
+            debugger;
             this._callSubscriber(this._state);
 
         } else if (action.type === 'UPDATE-POST-TEXT') {
@@ -81,6 +83,7 @@ let store = {
         store._callSubscriber = observer;
     }
 }
+debugger;
 
 export const addPostActionCreator = () => {
     return ({
