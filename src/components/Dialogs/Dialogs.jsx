@@ -2,8 +2,8 @@ import React from "react";
 import s from './Dialogs.module.css';
 import DialogItem from "./DialogItems/DialogItem";
 import Message from "./Message/Message";
-import {updateNewMessageBody} from "../../redux/state";
-import {addCurrentDialog} from "../../redux/state";
+import {updateNewMessageBody} from "../../redux/dialogs_reducer";
+import {addCurrentDialog} from "../../redux/dialogs_reducer";
 
 
 
@@ -30,7 +30,6 @@ const Dialogs = (props) => {
 
     let addCurrentMessage = () => {
         let current = newDialog.current.value;
-
         props.dispatch(updateNewMessageBody(current));
 
 
