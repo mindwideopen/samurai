@@ -75,17 +75,7 @@ let store = {
         this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
         this._callSubscriber(this._state);
         }
-
-
-
-
-
-
 }
-
-
-
-
 
 export default store;
 window.store = store;
