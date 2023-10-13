@@ -22,17 +22,17 @@ const App = (props) => {
 
                 <div className="wrapper-content">
                     <Routes>
-                        <Route path='/profile/*' element={<Profile posts={props.appState.profilePage.posts}
-                                                                   newPostText={props.appState.profilePage.newPostText}
+                        <Route path='/profile/*' element={<Profile posts={props.appState.profileReducer.posts}
+                                                                   newPostText={props.appState.profileReducer.newPostText}
                                                                    dispatch={props.dispatch}/>}/>
-                        <Route path='/dialogs/*' element={<Dialogs dialogsData={props.appState.dialogsPage.dialogsData}
-                                                                   messagesData={props.appState.dialogsPage.messagesData}
+                        <Route path='/dialogs/*' element={<Dialogs dialogsData={props.appState.dialogReducer.dialogsData}
+                                                                   messagesData={props.appState.dialogReducer.messagesData}
                                                                    dispatch={props.dispatch}
-                                                                   newMessageBody={props.appState.dialogsPage.newMessageBody}/>}/>
+                                                                   newMessageBody={props.appState.dialogReducer.newMessageBody}/>}/>
                         <Route path='/news/*'     element={<News/>}/>
                         <Route path='/music/*'    element={<Music/>}/>
                         <Route path='/settings/*' element={<Settings/>}/>
-                        <Route path='/friends/*'  element={<Friends image={props.appState.friendsPage.friendsImage}/>}/>
+                        <Route path='/friends/*'  element={<Friends image={props.appState.friendsPageReducer.friendsImage}/>}/>
 
                     </Routes>
 
