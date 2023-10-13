@@ -13,7 +13,7 @@ import Friends from "./components/Friends/Friends";
 
 
 const App = (props) => {
-    debugger;
+
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
@@ -32,7 +32,8 @@ const App = (props) => {
                         <Route path='/news/*'     element={<News/>}/>
                         <Route path='/music/*'    element={<Music/>}/>
                         <Route path='/settings/*' element={<Settings/>}/>
-                        <Route path='/friends/*'  element={<Friends image={props.appState.friendsPageReducer.friendsImage}/>}/>
+                        <Route path='/friends/*'  element={<Friends image={props.appState.friendsPageReducer.friendsImage}
+                                                                    dispatch={props.dispatch}/>}/>
 
                     </Routes>
 

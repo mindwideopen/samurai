@@ -1,5 +1,6 @@
 import profileReducer from "./profile_reducer";
 import dialogsReducer from "./dialogs_reducer";
+import friendsPageReducer from "./friends_reducer";
 
 
 
@@ -33,6 +34,7 @@ let store = {
             newPostText: ''
 
         },
+
         dialogsPage: {
             messagesData: [
                 {id: 1, message: 'Hi!'},
@@ -52,8 +54,10 @@ let store = {
             ],
             newMessageBody: ''
 
-        }, friendsPage: {
-            friendsImage: 'https://flxt.tmsimg.com/assets/p183931_b_h10_af.jpg'
+        },
+
+        friendsPage: {
+            friendsImage: ''/*'https://flxt.tmsimg.com/assets/p183931_b_h10_af.jpg'*/
         }
     },
 
@@ -70,9 +74,10 @@ let store = {
         },
 
 
-    dispatch(action) {
+    dispatch (action) {
         this._state.profilePage = profileReducer(this._state.profilePage, action);
         this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
+        this._state.friendsPage = friendsPageReducer(this._state.friendsPage, action);
         this._callSubscriber(this._state);
         }
 }

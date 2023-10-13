@@ -3,10 +3,16 @@
     border-radius: 10px;
     border: 2px solid black;
 
+
 }
 
 .friends {
 
     padding: 100px;
     border: antiquewhite 5px solid;
+}
+
+button {
+    width: 100px;
+    height: 50px;
 }

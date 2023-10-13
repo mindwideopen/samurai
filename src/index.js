@@ -8,7 +8,7 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let rerenderEntireTree = (state) => {
-    debugger;
+
     root.render(
         <React.StrictMode>
             <App appState={state} dispatch={store.dispatch.bind(store)}/>
@@ -18,7 +18,10 @@ let rerenderEntireTree = (state) => {
 
 rerenderEntireTree(store.getState());
 
-store.subscribe(rerenderEntireTree)
+store.subscribe(() => {
+    let state = store.getState();
+    rerenderEntireTree(state)
+})
 
 
 // If you want to start measuring performance in your app, pass a function

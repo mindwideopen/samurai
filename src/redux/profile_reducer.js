@@ -8,7 +8,8 @@ export const addPostActionCreator = () => {
 }
 export const updateNewPostTextActionCreator = (text) => {
     return ({
-        type: UPDATE_POST_TEXT, newText: text
+        type: UPDATE_POST_TEXT,
+        newText: text
     })
 }
 
@@ -39,7 +40,7 @@ const initialState = {
     newPostText: ''
 
 }
-const profileReducer = (state=initialState, action) => {
+const profileReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST:
             let newPost = {
@@ -52,6 +53,7 @@ const profileReducer = (state=initialState, action) => {
             return state;
         case UPDATE_POST_TEXT:
             state.newPostText = action.newText;
+
             return state;
         default:  return state
     }
