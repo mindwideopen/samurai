@@ -8,7 +8,7 @@ export const User = () => {
             User
             User
             User
-            Before remote commit
+            Before Remote commit
         </div>
     )
 }
