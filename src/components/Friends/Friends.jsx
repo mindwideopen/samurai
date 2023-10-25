@@ -16,7 +16,7 @@ const Friends = (props) => {
 
   return (
       <div className={s.friends}>
-          <button onClick={showFriends}>Click me!</button>
+          <button onClick={showFriends}>Click ME!</button>
         <img className={s.picture} src={props.image} />
       </div>
 
