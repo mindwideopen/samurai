@@ -37,10 +37,11 @@ const initialState = {
             likesCount: 1000
         }
     ],
-    newPostText: ''
+    newPostText: 'Type smth'
 
 }
 const profileReducer = (state = initialState, action) => {
+    debugger;
     switch (action.type) {
         case ADD_POST:
             let newPost = {

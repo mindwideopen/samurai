@@ -19,6 +19,7 @@ debugger;
             state.friendsImage = action.src
             return state;
         default:
+
             return state
     }
 

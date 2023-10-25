@@ -57,7 +57,7 @@ let store = {
         },
 
         friendsPage: {
-            friendsImage: ''/*'https://flxt.tmsimg.com/assets/p183931_b_h10_af.jpg'*/
+            friendsImage: ''
         }
     },
 
@@ -83,4 +83,4 @@ let store = {
 }
 
 export default store;
-window.store = store;
+// window.store = store;
